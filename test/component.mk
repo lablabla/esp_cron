@@ -1,2 +1,3 @@
-CFLAGS += -D CRON_USE_LOCAL_TIME
-COMPONENT_ADD_LDFLAGS = -Wl,--whole-archive -l$(COMPONENT_NAME) -Wl,--no-whole-archive
+COMPONENT_ADD_INCLUDEDIRS += library/ccronexpr library/jobs
+COMPONENT_SRCDIRS += library/ccronexpr library/jobs
+CPPFLAGS += -D CRON_USE_LOCAL_TIME
